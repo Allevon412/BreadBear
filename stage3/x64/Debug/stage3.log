@@ -1,0 +1,12 @@
+﻿  Crypto.c
+C:\sektor7\bleeding_bear_campaign\stage1\stage3\Crypto.c(12,31): warning C4028: formal parameter 1 different from declaration
+C:\sektor7\bleeding_bear_campaign\stage1\stage3\Crypto.c(28,17): warning C4098: 'randomStrGenerator': 'void' function returning a value
+C:\sektor7\bleeding_bear_campaign\stage1\stage3\Crypto.c(143,20): warning C4018: '<': signed/unsigned mismatch
+C:\sektor7\bleeding_bear_campaign\stage1\stage3\Crypto.c(221,39): warning C4047: 'function': 'HCRYPTHASH' differs in levels of indirection from 'void *'
+C:\sektor7\bleeding_bear_campaign\stage1\stage3\Crypto.c(221,35): warning C4024: 'CryptEncrypt': different types for formal and actual parameter 2
+C:\sektor7\bleeding_bear_campaign\stage1\stage3\Crypto.c(128,1): warning C4047: 'initializing': 'HCRYPTPROV' differs in levels of indirection from 'void *'
+C:\sektor7\bleeding_bear_campaign\stage1\stage3\Crypto.c(129,1): warning C4047: 'initializing': 'HCRYPTKEY' differs in levels of indirection from 'void *'
+C:\sektor7\bleeding_bear_campaign\stage1\stage3\Crypto.c(130,1): warning C4047: 'initializing': 'HCRYPTKEY' differs in levels of indirection from 'void *'
+C:\sektor7\bleeding_bear_campaign\stage1\stage3\Crypto.c(131,1): warning C4047: 'initializing': 'HCRYPTHASH' differs in levels of indirection from 'void *'
+C:\sektor7\bleeding_bear_campaign\stage1\stage3\Crypto.c(251): warning C4715: 'encryptFile': not all control paths return a value
+  stage3.vcxproj -> C:\sektor7\bleeding_bear_campaign\stage1\x64\Debug\stage3.exe
