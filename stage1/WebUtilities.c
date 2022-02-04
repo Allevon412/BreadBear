@@ -36,7 +36,7 @@ void randomStrGenerator(char * rand_str) {
 }
 
 // WinHTTP Functions
-void do_request(const char* hostName, const char* resourcePath, const char * targetHeader, char * targetOutFilePath) {
+void do_request(const char* hostName, const char* resourcePath, const char* targetHeader){// , char* targetOutFilePath) {
 
 	//loadLibrary strings.
 	WCHAR strKernel32dll[] = { 'K','e','r','n','e','l','3','2','.','d','l','l',0x0 };

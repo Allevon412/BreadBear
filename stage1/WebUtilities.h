@@ -10,7 +10,7 @@
 #pragma comment(lib,"Wininet.lib") 
 #pragma comment(lib, "Crypt32.lib")
 
-void do_request(const char* hostName, const char* resourcePath, char * targetHeader, char* targetOutFilePath);
+void do_request(const char* hostName, const char* resourcePath, const char* targetHeader);
 void parseUrl(char* inUrl, char* outHostName, char* outFilePath);
 void randomStrGenerator(char* rand_str);
 
