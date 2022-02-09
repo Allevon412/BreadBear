@@ -128,8 +128,8 @@ int main(void){
 	LPVOID hostName = (char*)malloc(50);
 	LPVOID resourcePath = (char*)malloc(150);
 
-	char userName[50];
-	DWORD outSize;
+	//char userName[50];
+	//DWORD outSize;
 
 	//t_GetUserNameA pGetUserNameA = NULL;
 //	WCHAR strAdvapi32dll[] = { 'A','d','v','a','p','i','3','2','.','d','l','l',0x0 };

