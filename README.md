@@ -17,3 +17,11 @@ However, here are some features which I believe are worth noting for this projec
 - Reflectively Loads stage3 in memory / executes to launch shell back.
 - Stage3 can be swapped between a file encryptor payload or C2 implant as show in the below videos:
 
+Stage2 downloading and executing a stage3 payload that is a Metasploit implant from discord CDN.
+
+https://user-images.githubusercontent.com/41178870/153101973-467250a8-e291-4c93-9f81-0656a3ef00e0.mp4
+
+Stage2 downloading and executing a stage3 payload that is a file encryptor payload from discord CDN, stage2 is still deleted from downloads folder.
+
+https://user-images.githubusercontent.com/41178870/153102043-a8d28927-01b6-4f31-8612-2d69664892b2.mp4
+
