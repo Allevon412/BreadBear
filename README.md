@@ -1,5 +1,5 @@
 # BreadBear
-A PoC~ish of https://elastic.github.io/security-research/malware/2022/01/01.operation-bleeding-bear/article/
+A PoC~ish of [https://elastic.github.io/security-research/malware/2022/01/01.operation-bleeding-bear/article/](https://www.elastic.co/security-labs/operation-bleeding-bear)
 
 The goal of this project was to create my own red team campaign that would emulate some of the TTPs from the above campaign analysis.
 During my endeavor I decdied to switch from a complete mimick to a substitute / exclude / improve upon certain tactics that I deemed unnecessary.
